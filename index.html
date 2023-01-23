@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="./CSS/index.css">   
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@300&display=swap" rel="stylesheet">
+
+        <script src="https://kit.fontawesome.com/ffc43a369a.js" crossorigin="anonymous"></script>
+
+        <title>Encriptador</title>
+    </head>
+    <body>
+        <header>
+            <div id="logoContainer">
+                <!-- aca va la imagen del logo -->
+                <img src="./imagenes/logo/MF-logo.png" class="img">
+            </div>
+            <h1 class="text">Encriptador de códigos</h1>
+        </header>
+        <form id="textcontainer">
+            <textarea id="textfield" placeholder="Ingrese el texto aqui" class="text" autofocus></textarea>
+        </form>
+        <div id="warning">
+           <i class="fa-solid fa-circle-exclamation"></i>
+            <h6 class="text">solo letras minusculas y sin acentos</h6>
+        </div>
+        <form id="containerButtons">
+            <input type="button" id="btnEncriptar" value="Encriptar" class="text">
+            <input type="button" id="btnDesencriptar" value="Desencriptar" class="text">
+        </form>
+        <div id="containerResult" class="text">
+            <p>
+                <b>Ningún mensaje fue encontrado</b>
+            </p>
+            <p>
+                Ingresa el texto que desees encriptar o desencriptar
+            </p>
+        </div>
+        <footer class="text">
+            <div>creado por Miguel Fonseca</div>
+            <div>correo: fou14.mf@gmail.com</div>
+            <div id="linkedin">linkedin: https://www.linkedin.com/in/miguel-fonseca-devops/</div>
+        </footer>
+    </body>
+    <script type="text/javascript" src="./javaScript/index.js"></script>
+</html>

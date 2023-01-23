@@ -1,0 +1,248 @@
+* {
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: #E5E5E5;
+}
+
+/*--------------------------------------------------------------------------------------------*/
+
+header{
+    margin: 8px 5px 8px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+}
+#logoContainer{
+    /*display: inline-block;*/
+    /*width: 70px;*/
+    /*height: 70px;*/
+    /*min-width: 100px;*/
+}
+#logoContainer > img{
+    height: 70px;
+
+}
+h1{
+    /*display: inline-block;*/
+    font-size: 1.75 rem;
+    
+    text-align: center;
+}
+
+/*--------------------------------------------------------------------------------------------*/
+
+.text{
+    font-family: 'Chivo Mono', monospace;
+}
+
+/*--------------------------------------------------------------------------------------------*/
+
+#textcontainer{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#textfield{
+    background-color: #E5E5E5;
+    flex-basis: 300px;
+    min-width: 95%;
+    /*width: 90%;*/
+    min-height: 250px;
+    border: none;
+    font-size: 28px;
+    line-height: 150%;
+}
+#textfield::placeholder{
+    font-size: 23px;
+    font-weight: 580;
+    color: #00008B;
+
+}
+
+/*-------------------------------------------------------------------------------------------*/
+
+#warning{
+    display: flex;
+    /*align-items: center;*/
+    /*justify-content: start;*/
+    justify-content: start;
+    opacity: 0.8;
+    margin-top: 12px;
+}
+
+#warning i{
+    padding-left: 10px;
+    font-size: 16px;
+}
+#warning h6{
+    margin-left: 7px;
+    font-size: 13px;
+}
+/*-------------------------------------------------------------------------------------------*/
+
+#containerButtons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+#containerButtons input{
+    /*text-decoration: none;*/
+    border: solid #00f 2px;
+    /*flex-basis: auto;*/
+    min-width: 90%;
+    height: 67px;
+    border-radius: 24px;
+    font-size: 22px;
+
+}
+
+#btnEncriptar{
+    background-color: #00008B;
+    color: #fff;
+
+    /*flex-grow: 5;*/
+    margin: 8px;
+    margin-top: 15px;
+
+}
+#btnDesencriptar{
+    /*flex-grow: 1;*/
+    margin: 8px;
+}
+/*--------------------------------------------------------------------------------------------*/
+#containerResult{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 32px;
+    gap: 32px;
+    border-radius: 32px;
+    margin: 10px 15px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    min-width: 200px;
+    min-height: 150px;
+    font-size: 1.5rem;
+}
+#containerResult p{
+    /*align-self: flex-start;*/
+    font-size: 1rem;
+    text-align: center;
+    
+}
+
+#btnCopiar{
+    border-radius: 24px;
+    border: 1px solid #0A3871;
+    min-width: 75%;
+    height: 67px;
+    position: relative;
+    left: 13%;
+    font-size: 1.3rem;
+}
+
+#pTextResult{
+    /*font-size: 1em !important;*/
+    text-align: left !important;
+}
+/*--------------------------------------------------------------------------------------------*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px;
+    font-weight: bold;
+}
+
+/*-------------------------- RESPONSIVE  TABLET ----------------------------------------------*/
+
+@media screen and (min-width: 500px){
+    #logoContainer > img{
+        height: 100px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    /*--------------------------------------------------------------------------------------*/
+    #textcontainer{
+        margin: 50px 20px;
+    }
+    #textfield{
+        min-height: 500px;
+        font-size: 30px;
+    }
+    #textfield::placeholder{
+        font-size: 30px;
+    }
+    /*----------------------------------------------------------------------------------*/
+    #warning{
+        margin-left: 30px;
+    }
+    /*----------------------------------------------------------------------------------*/
+    #containerButtons{
+        flex-direction: row;
+    }
+    #containerButtons input{
+        min-width: 45%;
+    }
+    /*----------------------------------------------------------------------------------*/
+    #containerResult{
+        margin: 30px;
+        min-height: 70px;
+        gap: 24px;
+        align-items: center;
+    }
+    #containerResult p{
+        font-size: 1.4rem;
+    }
+    #btnCopiar{
+        min-width: 100%;
+        left: 0;
+    }
+    /*-----------------------------------------------------------------------------------*/
+    footer{
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+/*-------------------------------  RESPONSIVE ESCRITORIO ---------------------------------*/
+
+@media screen and (min-width: 1000px){
+    header{
+        justify-content: flex-start;
+        gap: 30px;
+        margin-left: 30px;
+    }
+    /*------------------------------------------------------------------------------------*/
+    #textcontainer{
+        justify-content: flex-start;
+    }
+    #textfield{
+        min-width: 60%;
+        margin: 20px 50px;
+    }
+    #warning{
+        margin-left: 4%;
+    }
+    #warning i{
+        font-size: 20px;
+    }
+    #warning h6{
+        font-size: 18px;
+    }
+
+}
+
+
+
