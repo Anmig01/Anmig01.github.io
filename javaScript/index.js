@@ -94,7 +94,7 @@ btnEncriptar.onclick = function(){
 	{
 		let textoEncriptado = encriptar(text).toLowerCase();
 		textoEncriptado = '<p id="pTextResult">'+ textoEncriptado +'</p>'
-		let botonInner = '<input type="button" id="btnCopiar" value="Copiar" class="text">';
+		let botonInner = '<input type="button" id="btnCopiar" value="Copiar" class="text btn">';
 		textfieldtoDesEncript.innerHTML = textoEncriptado + botonInner;
 		const btnCopiar = document.getElementById("btnCopiar");
 		clickBtnCopiar(btnCopiar,textfieldtoDesEncript);

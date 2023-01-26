@@ -149,6 +149,10 @@ h1{
     left: 13%;
     font-size: 1.3rem;
 }
+.btn:hover{
+    cursor: pointer;
+}
+
 
 #pTextResult{
     /*font-size: 1em !important;*/
@@ -241,6 +245,20 @@ footer{
     #warning h6{
         font-size: 18px;
     }
+    #containerResult{
+        position: absolute;
+        width: 350px;
+        height: 700px;
+        right: 0;
+        top: 20px;
+    }
+    #containerButtons{
+        width: 800px;
+    }
+    #btnCopiar{
+        bottom: -150px;
+    }
+    
 
 }
 
